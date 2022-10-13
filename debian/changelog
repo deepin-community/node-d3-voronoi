@@ -1,0 +1,54 @@
+node-d3-voronoi (1.1.4-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-d3-voronoi: Add Multi-Arch: foreign.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Pirate Praveen ]
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 16 Dec 2020 13:57:01 +0530
+
+node-d3-voronoi (1.1.4-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 Jul 2019 17:17:03 +0530
+
+node-d3-voronoi (1.1.4-1) experimental; urgency=medium
+
+  * New upstream version 1.1.4
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Switch to rollup from webpack (rollup is in main now)
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 22 Jun 2019 15:03:15 +0530
+
+node-d3-voronoi (1.1.2-2) unstable; urgency=medium
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Pirate Praveen ]
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Enable nocheck build profile
+  * Build umd file with webpack
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 12 Oct 2018 12:54:31 +0530
+
+node-d3-voronoi (1.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #878292)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 12 Oct 2017 14:18:37 +0530
