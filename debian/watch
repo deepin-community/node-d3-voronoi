@@ -1,5 +1,8 @@
-version=3
+version=4
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-d3-voronoi-$1.tar.gz/ \
- https://github.com/d3/d3-voronoi/tags .*/archive/v?([\d\.]+).tar.gz
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-d3-voronoi-$1/ \
+ https://github.com/d3/d3-voronoi/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-d3-voronoi,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-d3-voronoi-$1/" \
+ https://registry.npmjs.org/@types/d3-voronoi https://registry.npmjs.org/@types/d3-voronoi/-/d3-voronoi-([\d\.]+)@ARCHIVE_EXT@ group
